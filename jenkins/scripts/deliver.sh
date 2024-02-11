@@ -25,7 +25,11 @@ echo 'application (which Jenkins built using Maven) to the Jenkins UI.'
 set -x
 pwd
 # Replace special characters and set JAR file name
-JAR_FILE="target/${NAME}-${VERSION}.jar"
-echo $JAR_FILE
+JAR_FILE="${NAME}-${VERSION}.jar"
+echo "${JAR_FILE}"
+cd target/
 # Run the Java application
 java -jar "${JAR_FILE}"
+java -jar 'my-app-1.0-SNAPSHOT.jar'
+java -jar my-app-1.0-SNAPSHOT.jar
+
