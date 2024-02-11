@@ -22,8 +22,7 @@ set +x
 
 echo 'The following command runs and outputs the execution of your Java'
 echo 'application (which Jenkins built using Maven) to the Jenkins UI.'
-pwd
-WORKSPACE="/var/jenkins_home/workspace/github-pipeline"
 set -x
-cd "${WORKSPACE}"
+pwd
+ls -l target/*
 java -jar target/${NAME}-${VERSION}.jar
