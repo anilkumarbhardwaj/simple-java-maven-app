@@ -31,5 +31,4 @@ cd target/
 # Run the Java application
 java -jar "${JAR_FILE}"
 java -jar 'my-app-1.0-SNAPSHOT.jar'
-java -jar my-app-1.0-SNAPSHOT.jar
 
