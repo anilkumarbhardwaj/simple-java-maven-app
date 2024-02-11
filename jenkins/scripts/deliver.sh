@@ -24,9 +24,8 @@ echo 'The following command runs and outputs the execution of your Java'
 echo 'application (which Jenkins built using Maven) to the Jenkins UI.'
 set -x
 pwd
-ls -l target/*
 # Replace special characters and set JAR file name
 JAR_FILE="target/${NAME}-${VERSION}.jar"
-
+echo $JAR_FILE
 # Run the Java application
 java -jar "${JAR_FILE}"
