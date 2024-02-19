@@ -26,7 +26,6 @@ set -x
 pwd
 # Replace special characters and set JAR file name
 JAR_FILE="${NAME}-${VERSION}.jar"
-echo "${JAR_FILE}"
 cd target/
 # Run the Java application
 java -jar "${JAR_FILE}"
